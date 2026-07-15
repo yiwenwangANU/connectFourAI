@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "format": "prettier . --write",
-    "prepare": "husky"
+    "prepare": "husky",
+    "dev": "bun --hot ./src/index.ts"
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.1",
@@ -21,5 +22,8 @@
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "fastify": "^5.10.0"
   }
 }
